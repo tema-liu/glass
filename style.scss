@@ -2,6 +2,7 @@ $primary-color: #aa0601;
 $secondary-color: #000000;
 $tertiary-color: #fbf2f2;
 $four-color: white;
+$five-color: #650300;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -133,29 +134,49 @@ table {
 }
 
 body {
-  color: $primary-color;
+  color: $five-color;
   font-family: "Noto Sans TC", sans-serif;
   box-sizing: border-box;
+}
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+h3 {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 .sunglass-nav {
   background-color: $primary-color;
-  height: 80px;
+
   .container {
+    border: aqua 1px solid;
+    max-width: 1296px;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
 
     .nav-img {
       width: 80px;
       display: flex;
     }
     ul {
+      height: 80px;
       display: flex;
       flex-wrap: wrap;
-      // border: 2px solid red;
+      align-items: center;
       li {
         margin-left: 64px;
         //   border: 2px solid blue;
@@ -169,10 +190,79 @@ body {
   }
 }
 .header {
-  height: 787px;
   .banner {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     height: 100%;
     background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .header-text {
+      // border: 2px solid rgb(159, 255, 100);
+      padding: 296px 0;
+      max-width: 1296px;
+      margin: 0 auto;
+      border: 2px solid blue;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: end;
+      .header-textbox {
+        border: 2px solid rebeccapurple;
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: end;
+        .sub-title {
+          width: 502px;
+          height: 54px;
+        }
+        .main-title {
+          width: 576px;
+          height: 96px;
+        }
+        .buy-btn {
+          width: 104px;
+          height: 41px;
+          button {
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            color: $four-color;
+            border: none;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+.sec {
+  background-color: $tertiary-color;
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1296px;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    h2 {
+      padding: 0 15px;
+    }
+    .row {
+      margin: 0 auto;
+      .sec-img {
+        width: 83.83px;
+        margin: 36px auto 18px auto;
+      }
+      h3 {
+        margin: 8px 0 8px 0;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
   }
 }
