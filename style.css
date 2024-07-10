@@ -136,6 +136,7 @@ table {
 body {
   color: #650300;
   font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
 }
 
@@ -155,17 +156,37 @@ h3 {
   line-height: 1.5em;
 }
 
+h4 {
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #000000;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5em;
+}
+
+.container {
+  max-width: 1296px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.font-mid {
+  font-weight: 500;
 }
 
 .sunglass-nav {
   background-color: #aa0601;
 }
 .sunglass-nav .container {
-  border: aqua 1px solid;
-  max-width: 1296px;
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -187,7 +208,6 @@ p {
 .sunglass-nav .container ul li a {
   font-size: 20px;
   color: white;
-  text-decoration: none;
 }
 
 .header .banner {
@@ -197,18 +217,21 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
 }
+@media (max-width: 768px) {
+  .header .banner {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
+  }
+}
 .header .banner .header-text {
   padding: 296px 0;
   max-width: 1296px;
   margin: 0 auto;
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: end;
 }
 .header .banner .header-text .header-textbox {
-  border: 2px solid rebeccapurple;
   padding: 0 12px;
   display: flex;
   flex-direction: column;
@@ -242,24 +265,165 @@ p {
 .sec .container {
   display: flex;
   flex-direction: column;
-  max-width: 1296px;
   align-items: center;
   justify-content: center;
   padding: 80px 0;
 }
 .sec .container h2 {
-  padding: 0 15px;
+  padding: 0 15px 48px 15px;
 }
 .sec .container .row {
   margin: 0 auto;
 }
 .sec .container .row .sec-img {
   width: 83.83px;
-  margin: 36px auto 18px auto;
+  margin: 0px auto 18px auto;
 }
 .sec .container .row h3 {
   margin: 8px 0 8px 0;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+}
+
+.sec2 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sec2 .container h2 {
+  padding-bottom: 48px;
+}
+.sec2 .container .row a {
+  font-size: 48px;
+  font-family: "Roboto";
+  color: #aa0601;
+  text-align: center;
+}
+.sec2 .container .row a h2 {
+  padding: 8px 0 0 0;
+}
+
+.sec3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+}
+.sec3 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sec3 .container h2 {
+  color: white;
+  padding-bottom: 48px;
+}
+.sec3 .container .col-12 .sec3-img {
+  height: 240px;
+}
+.sec3 .container .col-12 .sec3-img img {
+  height: 100%;
+}
+.sec3 .container .col-12 h2 {
+  background-color: white;
+  text-align: center;
+  color: #aa0601;
+  font-family: "Roboto";
+  padding: 8px 0;
+}
+
+.sec-4 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 56px;
+}
+.sec-4 .container h2 {
+  padding-bottom: 48px;
+}
+.sec-4 .container .row .sec-card {
+  padding-bottom: 24px;
+}
+.sec-4 .container .row .sec-card .item {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  height: 100%;
+}
+.sec-4 .container .row .sec-card .item .sec4-img img {
+  border-radius: 4px 4px 0 0;
+}
+.sec-4 .container .row .sec-card .item .card-text-box {
+  padding: 16px 16px 0px 16px;
+}
+.sec-4 .container .row .sec-card .item .card-text-box .card-text-p {
+  padding-bottom: 48px;
+}
+.sec-4 .container .row .sec-card .item .card-text-box .card-text-p p {
+  color: #000000;
+  padding-bottom: 8px;
+}
+.sec-4 .container .row .sec-card .item .card-text-box .date-p {
+  padding: 16px 0 16px 0;
+  color: #707070;
+}
+
+.sec-5 {
+  background-color: #fbf2f2;
+}
+.sec-5 .container {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 12px;
+}
+.sec-5 .container h2 {
+  padding-bottom: 48px;
+}
+.sec-5 .container form h4 {
+  padding-bottom: 24px;
+}
+.sec-5 .container form label {
+  color: #000000;
+}
+.sec-5 .container form .sub {
+  display: block;
+  padding: 16px 0 16px 0;
+  min-width: 348px;
+  margin: 0 auto;
+  margin-top: 48px;
+  border: 0;
+  background-color: #aa0601;
+  color: white;
+}
+.sec-5 .container form textarea {
+  height: 136px;
+  resize: none;
+}
+
+.font-line1-5 {
+  line-height: 1.5em;
+}
+
+.input-color {
+  display: block;
+  background-color: #fbf2f2;
+  border: 1px solid black;
+  padding: 4px 0;
+  padding-left: 12px;
+  margin: 8px 0 16px 0;
+}
+.input-color::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.input-color::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.checkbox {
+  background-color: #fbf2f2;
 }/*# sourceMappingURL=style.css.map */
