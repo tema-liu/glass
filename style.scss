@@ -114,7 +114,8 @@ body {
   line-height: 1;
 }
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 blockquote,
@@ -431,6 +432,60 @@ img {
   margin: 8px 0 16px 0;
 }
 
-.checkbox {
-  background-color: $tertiary-color;
+.footer {
+  background-color: $primary-color;
+  .container {
+    h3 {
+      display: inline-block;
+    }
+    .footer-head {
+      display: flex;
+      justify-content: space-between;
+      .footer-head-item {
+        display: flex;
+        align-items: center;
+        li {
+          padding-top: 60px;
+          padding-right: 48px;
+        }
+      }
+      .web-img {
+        padding: 48px 0 0 0;
+        display: flex;
+        align-items: center;
+        li {
+          width: 48px;
+          height: 48px;
+          margin-left: 32px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .footer-main {
+      padding: 33px 0;
+      border-bottom: 1px solid $four-color;
+      li {
+        span {
+          font-size: 36px;
+        }
+      }
+    }
+
+    .footer-last {
+      display: flex;
+      justify-content: space-between;
+      padding: 32px 0;
+
+      .footer-p {
+        display: flex;
+        flex-wrap: nowrap;
+        a {
+          padding-left: 48px;
+        }
+      }
+    }
+  }
 }

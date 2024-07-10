@@ -111,7 +111,8 @@ body {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -424,6 +425,53 @@ img {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.checkbox {
-  background-color: #fbf2f2;
+.footer {
+  background-color: #aa0601;
+}
+.footer .container h3 {
+  display: inline-block;
+}
+.footer .container .footer-head {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .footer-head .footer-head-item {
+  display: flex;
+  align-items: center;
+}
+.footer .container .footer-head .footer-head-item li {
+  padding-top: 60px;
+  padding-right: 48px;
+}
+.footer .container .footer-head .web-img {
+  padding: 48px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+.footer .container .footer-head .web-img li {
+  width: 48px;
+  height: 48px;
+  margin-left: 32px;
+}
+.footer .container .footer-head .web-img li img {
+  width: 100%;
+}
+.footer .container .footer-main {
+  padding: 33px 0;
+  border-bottom: 1px solid white;
+}
+.footer .container .footer-main li span {
+  font-size: 36px;
+}
+.footer .container .footer-last {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+.footer .container .footer-last .footer-p {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.footer .container .footer-last .footer-p a {
+  padding-left: 48px;
 }/*# sourceMappingURL=style.css.map */
