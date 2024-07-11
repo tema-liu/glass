@@ -143,6 +143,7 @@ body {
 h1 {
   font-size: 64px;
   font-weight: bold;
+  line-height: 1.5em;
 }
 
 h2 {
@@ -175,21 +176,25 @@ img {
 .font-mid {
   font-weight: 500;
 }
+
+// 導覽頁
 .sunglass-nav {
   background-color: $primary-color;
 
   .container {
-    height: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
 
     .nav-img {
-      width: 80px;
       display: flex;
+      a {
+        width: 80px;
+      }
     }
     ul {
-      height: 80px;
+      padding: 25px 0;
+
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -204,6 +209,7 @@ img {
     }
   }
 }
+
 .header {
   .banner {
     // border: 1px solid blue;
@@ -232,17 +238,10 @@ img {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: end;
-        .sub-title {
-          width: 502px;
-          height: 54px;
-        }
-        .main-title {
-          width: 576px;
-          height: 96px;
-        }
         .buy-btn {
           width: 104px;
           height: 41px;
+          margin-top: 8px;
           button {
             font-size: 20px;
             width: 100%;
@@ -309,6 +308,7 @@ img {
 
 .sec3 {
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-size: cover;
   .container {
     display: flex;
     flex-direction: column;
@@ -354,25 +354,26 @@ img {
           border-radius: 0 0 4px 4px;
           box-shadow: 0px 2px 6px #00000029;
           height: 100%;
+          position: relative;
           .sec4-img {
             img {
               border-radius: 4px 4px 0 0;
             }
           }
           .card-text-box {
-            padding: 16px 16px 0px 16px;
-
+            padding: 16px 16px 109px 16px;
             .card-text-p {
-              padding-bottom: 48px;
               p {
                 color: $secondary-color;
                 padding-bottom: 8px;
               }
             }
-            .date-p {
-              padding: 16px 0 16px 0;
-              color: #707070;
-            }
+          }
+          .date-p {
+            color: #707070;
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
           }
         }
       }
@@ -443,16 +444,21 @@ img {
       justify-content: space-between;
       .footer-head-item {
         display: flex;
+        flex-wrap: nowrap;
         align-items: center;
+
         li {
+          display: flex;
           padding-top: 60px;
           padding-right: 48px;
+          a {
+            white-space: nowrap;
+          }
         }
       }
       .web-img {
         padding: 48px 0 0 0;
         display: flex;
-        align-items: center;
         li {
           width: 48px;
           height: 48px;
@@ -487,5 +493,168 @@ img {
         }
       }
     }
+  }
+}
+
+//RWD手機設定
+@media screen and (max-width: 768px) {
+  .sec2 {
+    .row {
+      .sec2-img {
+        padding: 0 204px;
+      }
+      a h2 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .sec3 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png);
+  }
+  .sec-5 {
+    .container {
+      h2 {
+        padding-bottom: 24px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      .footer-section1 {
+        .footer-head {
+          .footer-head-item {
+            li {
+              padding-right: 16px;
+            }
+          }
+          .web-img {
+            li {
+              width: 40px;
+              height: 40px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//RWD手機設定
+@media screen and (max-width: 576px) {
+  .sunglass-nav .container {
+    padding: 0;
+    display: block;
+    .nav-img {
+      padding: 16px 0;
+      padding-left: 16px;
+    }
+    ul {
+      padding: 0;
+      li {
+        border: 1px solid $four-color;
+        width: 50%;
+        margin: 0;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .header {
+    .banner {
+      .header-text {
+        padding: 144px 0;
+        .header-textbox {
+          .sub-title {
+            h3 {
+              font-size: 16px;
+            }
+          }
+          .main-title {
+            h1 {
+              font-size: 24px;
+            }
+          }
+          .buy-btn {
+            button {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sec2 {
+    .row {
+      .sec2-img {
+        padding: 0;
+      }
+    }
+  }
+
+  .sec3 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png);
+  }
+
+  .footer {
+    .container {
+      .footer-section1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        border-bottom: 1px solid $four-color;
+        .footer-head {
+          .footer-head-item {
+            display: none;
+          }
+          .web-img {
+            padding-top: 24px;
+            li {
+              margin-left: 8px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .footer-main {
+          padding: 24px 0;
+          border: none;
+          li {
+            span {
+              font-size: 16px;
+            }
+            h3 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .footer-last {
+        display: block;
+        padding: 16px 0 24px 0;
+        .footer-p {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.h2-375 {
+  @media screen and (max-width: 376px) {
+    font-size: 24px;
+    padding-bottom: 24px !important;
+  }
+}
+.container-p40 {
+  @media screen and (max-width: 376px) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
 }
