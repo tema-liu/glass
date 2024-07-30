@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link py-9 rel="preconnect" href="https://fonts.googleapis.com" />
+    <link py-9 rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      py-9
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      py-9
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      py-9
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link py-9 rel="stylesheet" href="../scss/all.css" />
+    <link py-9 rel="stylesheet" href="../scss/style.css" />
+
+    <title>眼鏡官網</title>
+  </head>
+  <body>
+    <nav class="sunglass-nav">
+      <div class="container">
+        <div class="nav-img">
+          <a href=""
+            ><img
+              class="w-100"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
+              alt="公司logo"
+          /></a>
+        </div>
+        <ul style="margin-left: auto">
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container container-width768-p0">
+      <ul
+        class="nav nav-tabs d-flex justify-content-center flex-nowrap border-0"
+        id="myTab"
+        role="tablist"
+      >
+        <li class="nav-item border border-1 page2-li" role="presentation">
+          <button
+            class="nav-link py-9 active page2-navlink py-9 fontfamily-roboto rounded-0 font-mid w-100col-sm-6 py-lg-3 py-lg-4 w-100 h-100"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+          >
+            OPTICAL
+          </button>
+        </li>
+        <li class="nav-item border border-1 page2-li" role="presentation">
+          <button
+            class="nav-link py-9 page2-navlink py-9 fontfamily-roboto rounded-0 font-mid w-100col-sm-6 py-lg-3 py-lg-4 w-100 h-100"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile"
+            type="button"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+          >
+            SUNGLASSES
+          </button>
+        </li>
+        <li class="nav-item border border-1 page2-li" role="presentation">
+          <button
+            class="nav-link py-9 page2-navlink py-9 fontfamily-roboto rounded-0 font-mid w-100col-sm-6 py-lg-3 py-lg-4 w-100 h-100"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact"
+            type="button"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            FUNCTIONAL
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="myTabContent">
+      <!-- OPTICAL -->
+      <div
+        class="tab-pane fade show active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <div class="row g-0">
+          <div class="col-6">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-1.png
+                  "
+                  media="(max-width: 769px)"
+                />
+                <img
+                  class="w-100"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-1.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-2.png
+                  "
+                  media="(max-width: 769px)"
+                />
+                <img
+                  class="w-100"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-2.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container d-flex justify-content-center mt-6 mb-4 mt-sm-7 mb-sm-8"
+        >
+          <div class="page2-maintext d-inline-block text-black">
+            <h2 class="d-flex justify-content-center">Celluloid Combi</h2>
+            <h3 class="d-flex justify-content-center">賽璐珞鈦金屬混合鏡框</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row g-4 m-0">
+            <div class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-5.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-sm-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-6.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-sm-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-7.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-sm-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-8.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-sm-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-9.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-sm-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-10.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-lg-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-11.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-3 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-lg-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-12.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center py-10 pt-sm-0 pb-sm-7"
+        >
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link px-sm-9 py-9 px-2" href="#">上一頁</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">1</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link px-3 py-9" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-sm-9 py-9 px-2 bg-light" href="#"
+                  >下一頁</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- SUNGLASSES -->
+      <div
+        class="tab-pane fade"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        <div class="row g-0">
+          <div class="col-6">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-3.png
+                  "
+                  media="(max-width: 769px)"
+                />
+                <img
+                  class="w-100"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-3.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="col-6">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-4.png
+                  "
+                  media="(max-width: 769px)"
+                />
+                <img
+                  class="w-100"
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-4.png"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center mt-6 mb-4 mt-sm-7 mb-sm-8"
+        >
+          <div class="page2-maintext d-inline-block text-black">
+            <h2 class="d-flex justify-content-center">2020 NEW COLLECTION</h2>
+            <h3 class="d-flex justify-content-center">賽璐珞鈦金屬混合鏡框</h3>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row g-4 m-0">
+            <div class="col-sm-6 col-lg-4 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-4.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mt-0 pb-4 pb-sm-6 pb-lg-7">
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-5.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-lg-4 mt-0 pb-4 pb-sm-6 pb-lg-7 d-none d-sm-block"
+            >
+              <div class="card">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-6.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="d-flex justify-content-between">
+                  <p class="fontfamily-roboto fs-8">BJ41600S</p>
+                  <p class="fontfamily-roboto fs-8 text-primary font-mid">
+                    NTD3,490
+                  </p>
+                </div>
+                <div class="d-flex">
+                  <div class="p-9 bg-info me-2 rounded rounded-1"></div>
+                  <div class="p-9 bg-warning rounded rounded-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center py-10 pt-sm-0 pb-sm-7"
+        >
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link px-sm-9 py-9 px-2" href="#">上一頁</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">1</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link px-3 py-9" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 py-9" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-sm-9 py-9 px-2 bg-light" href="#"
+                  >下一頁</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-section1">
+          <div class="footer-head">
+            <ul class="footer-head-item">
+              <li><a class="text-white" href="#">首頁</a></li>
+              <li><a class="text-white" href="#">系列鏡框</a></li>
+              <li><a class="text-white" href="#">門市據點</a></li>
+              <li><a class="text-white" href="#">部落格</a></li>
+              <li><a class="text-white" href="#">常見問題</a></li>
+            </ul>
+            <ul class="web-img">
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic-social-fb.png"
+                    alt="FB"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_ig.png"
+                    alt="IG"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/ic_social_line.png"
+                    alt="LINE"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-main">
+            <li class="text-white">
+              <span class="material-symbols-outlined"> call </span>
+              <h3>0800-000-000</h3>
+            </li>
+            <li class="text-white">
+              <span class="material-symbols-outlined"> mail </span>
+              <h3>glasses@business.com</h3>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-last">
+          <p class="text-white">
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
+          <div class="footer-p">
+            <a class="text-white" href="#"><p>隱私權政策</p></a>
+            <a class="text-white" href="#"><p>服務條款</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,481 @@
+// 導覽頁
+.sunglass-nav {
+  background-color: $primary-color;
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .nav-img {
+      display: flex;
+      a {
+        width: 80px;
+      }
+    }
+    ul {
+      padding: 25px 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      li {
+        margin-left: 64px;
+        //   border: 2px solid blue;
+        a {
+          font-size: 20px;
+          color: $four-color;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  .banner {
+    // border: 1px solid blue;
+    height: 100%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media (max-width: 768px) {
+      background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
+    }
+
+    .header-text {
+      // border: 2px solid rgb(159, 255, 100);
+      padding: 296px 0;
+      max-width: 1296px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: end;
+      .header-textbox {
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: end;
+        .buy-btn {
+          width: 104px;
+          height: 41px;
+          margin-top: 8px;
+          button {
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            color: $four-color;
+            border: none;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+.sec {
+  background-color: $tertiary-color;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    h2 {
+      padding: 0 15px 48px 15px;
+    }
+    .row {
+      margin: 0 auto;
+      .sec-img {
+        width: 83.83px;
+        margin: 0px auto 18px auto;
+      }
+      h3 {
+        margin: 8px 0 8px 0;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+.sec2 {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2 {
+      padding-bottom: 48px;
+    }
+    .row {
+      a {
+        font-size: 48px;
+        font-family: "Roboto";
+        color: $primary-color;
+        text-align: center;
+        h2 {
+          padding: 8px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+.sec3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png);
+  background-size: cover;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2 {
+      color: $four-color;
+      padding-bottom: 48px;
+    }
+    .col-12 {
+      .sec3-img {
+        height: 240px;
+        img {
+          height: 100%;
+        }
+      }
+      h2 {
+        background-color: $four-color;
+        text-align: center;
+        color: $primary-color;
+        font-family: "Roboto";
+        padding: 8px 0;
+      }
+    }
+  }
+}
+
+.sec-4 {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 56px;
+    h2 {
+      padding-bottom: 48px;
+    }
+    .row {
+      .sec-card {
+        padding-bottom: 24px;
+        .item {
+          border-radius: 0 0 4px 4px;
+          box-shadow: 0px 2px 6px #00000029;
+          height: 100%;
+          position: relative;
+          .sec4-img {
+            img {
+              border-radius: 4px 4px 0 0;
+            }
+          }
+          .card-text-box {
+            padding: 16px 16px 109px 16px;
+            .card-text-p {
+              p {
+                color: $secondary-color;
+                padding-bottom: 8px;
+              }
+            }
+          }
+          .date-p {
+            color: #707070;
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sec-5 {
+  background-color: $tertiary-color;
+  .container {
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 12px;
+    h2 {
+      padding-bottom: 48px;
+    }
+    form {
+      h4 {
+        padding-bottom: 24px;
+      }
+      label {
+        color: $secondary-color;
+      }
+      .sub {
+        display: block;
+        padding: 16px 0 16px 0;
+        min-width: 348px;
+        margin: 0 auto;
+        margin-top: 48px;
+        border: 0;
+        background-color: $primary-color;
+        color: $four-color;
+      }
+      textarea {
+        height: 136px;
+        resize: none;
+      }
+    }
+  }
+}
+
+.font-line1-5 {
+  line-height: 1.5em;
+}
+
+.input-color {
+  display: block;
+  &::placeholder {
+    color: rgba($color: #000000, $alpha: 0.2);
+  }
+  background-color: $tertiary-color;
+  border: 1px solid black;
+  padding: 4px 0;
+  padding-left: 12px;
+  margin: 8px 0 16px 0;
+}
+
+.footer {
+  background-color: $primary-color;
+  .container {
+    h3 {
+      display: inline-block;
+    }
+    .footer-head {
+      display: flex;
+      justify-content: space-between;
+      .footer-head-item {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        li {
+          display: flex;
+          padding-top: 60px;
+          padding-right: 48px;
+          a {
+            white-space: nowrap;
+          }
+        }
+      }
+      .web-img {
+        padding: 48px 0 0 0;
+        display: flex;
+        li {
+          width: 48px;
+          height: 48px;
+          margin-left: 32px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .footer-main {
+      padding: 33px 0;
+      border-bottom: 1px solid $four-color;
+      li {
+        span {
+          font-size: 36px;
+        }
+      }
+    }
+
+    .footer-last {
+      display: flex;
+      justify-content: space-between;
+      padding: 32px 0;
+
+      .footer-p {
+        display: flex;
+        flex-wrap: nowrap;
+        a {
+          padding-left: 48px;
+        }
+      }
+    }
+  }
+}
+
+//RWD手機設定
+@media screen and (max-width: 768px) {
+  .sec2 {
+    .row {
+      .sec2-img {
+        padding: 0 204px;
+      }
+      a h2 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .sec3 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png);
+  }
+  .sec-5 {
+    .container {
+      h2 {
+        padding-bottom: 24px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      .footer-section1 {
+        .footer-head {
+          .footer-head-item {
+            li {
+              padding-right: 16px;
+            }
+          }
+          .web-img {
+            li {
+              width: 40px;
+              height: 40px;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//RWD手機設定
+@media screen and (max-width: 576px) {
+  .sunglass-nav .container {
+    padding: 0;
+    display: block;
+    .nav-img {
+      padding: 16px 0;
+      padding-left: 16px;
+    }
+    ul {
+      padding: 0;
+      li {
+        border: 1px solid $four-color;
+        width: 50%;
+        margin: 0;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .header {
+    .banner {
+      .header-text {
+        padding: 144px 0;
+        .header-textbox {
+          .sub-title {
+            h3 {
+              font-size: 16px;
+            }
+          }
+          .main-title {
+            h1 {
+              font-size: 24px;
+            }
+          }
+          .buy-btn {
+            button {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sec2 {
+    .row {
+      .sec2-img {
+        padding: 0;
+      }
+    }
+  }
+
+  .sec3 {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png);
+  }
+
+  .footer {
+    .container {
+      .footer-section1 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        border-bottom: 1px solid $four-color;
+        .footer-head {
+          .footer-head-item {
+            display: none;
+          }
+          .web-img {
+            padding-top: 24px;
+            li {
+              margin-left: 8px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        .footer-main {
+          padding: 24px 0;
+          border: none;
+          li {
+            span {
+              font-size: 16px;
+            }
+            h3 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .footer-last {
+        display: block;
+        padding: 16px 0 24px 0;
+        .footer-p {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.h2-375 {
+  @media screen and (max-width: 376px) {
+    font-size: 24px;
+    padding-bottom: 24px !important;
+  }
+}
+.container-p40 {
+  @media screen and (max-width: 376px) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
