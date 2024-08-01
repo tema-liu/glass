@@ -1,0 +1,14 @@
+@media screen and (max-width: 376px) {
+  .h2-375-24px {
+    font-size: 24px;
+  }
+}
+
+.page3-select {
+  width: 304px;
+}
+@media screen and (min-width: 376px) {
+  .page3-select {
+    width: 276px;
+  }
+} /*# sourceMappingURL=page3.css.map */
