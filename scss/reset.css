@@ -187,4 +187,74 @@ img {
 
 .fontfamily-roboto {
   font-family: "Roboto";
+}
+
+.container-856 {
+  max-width: 880px;
+}
+
+@media screen and (min-width: 993px) {
+  .fw-900 {
+    font-weight: 900;
+  }
+}
+
+.fs-md32-24 {
+  font-size: 24px;
+}
+@media screen and (min-width: 769px) {
+  .fs-md32-24 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .lg-lowercase {
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .lh-xs {
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .lh-xs {
+    line-height: 1.5rem;
+  }
+}
+
+.g-60-24 {
+  gap: 24px;
+}
+@media screen and (min-width: 993px) {
+  .g-60-24 {
+    gap: 60px;
+  }
+}
+
+.mb-124-80-64 {
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 576px) {
+  .mb-124-80-64 {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .mb-124-80-64 {
+    margin-bottom: 124px;
+  }
+}
+
+.icon-38-19 {
+  width: 19px;
+  height: 19px;
+}
+@media screen and (min-width: 769px) {
+  .icon-38-19 {
+    width: 38px;
+    height: 38px;
+  }
 } /*# sourceMappingURL=reset.css.map */

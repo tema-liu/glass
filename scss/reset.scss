@@ -180,3 +180,56 @@ img {
 .fontfamily-roboto {
   font-family: "Roboto";
 }
+.container-856 {
+  max-width: 880px;
+}
+
+.fw-900 {
+  @media screen and (min-width: 993px) {
+    font-weight: 900;
+  }
+}
+.fs-md32-24 {
+  font-size: 24px;
+  @media screen and (min-width: 769px) {
+    font-size: 32px;
+  }
+}
+.lg-lowercase {
+  @media screen and (min-width: 993px) {
+    text-transform: uppercase;
+  }
+}
+.lh-xs {
+  @media screen and (max-width: 993px) {
+    line-height: 1.2rem;
+  }
+  @media screen and (max-width: 576px) {
+    line-height: 1.5rem;
+  }
+}
+
+.g-60-24 {
+  gap: 24px;
+  @media screen and (min-width: 993px) {
+    gap: 60px;
+  }
+}
+.mb-124-80-64 {
+  margin-bottom: 64px;
+  @media screen and (min-width: 576px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 993px) {
+    margin-bottom: 124px;
+  }
+}
+
+.icon-38-19 {
+  width: 19px;
+  height: 19px;
+  @media screen and (min-width: 769px) {
+    width: 38px;
+    height: 38px;
+  }
+}
