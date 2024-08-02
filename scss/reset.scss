@@ -210,9 +210,13 @@ img {
 }
 
 .g-60-24 {
-  gap: 24px;
+  > div + div {
+    margin-top: 24px;
+  }
   @media screen and (min-width: 993px) {
-    gap: 60px;
+    > div + div {
+      margin-top: 60px;
+    }
   }
 }
 .mb-124-80-64 {

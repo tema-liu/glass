@@ -225,12 +225,12 @@ img {
   }
 }
 
-.g-60-24 {
-  gap: 24px;
+.g-60-24 > div + div {
+  margin-top: 24px;
 }
 @media screen and (min-width: 993px) {
-  .g-60-24 {
-    gap: 60px;
+  .g-60-24 > div + div {
+    margin-top: 60px;
   }
 }
 
